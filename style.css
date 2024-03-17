@@ -1,0 +1,75 @@
+
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin: 10px;
+}
+img {
+    padding-left: 10px;
+}
+
+/* Base styles for the button */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active/focus effect */
+button:active,
+button:focus {
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled state */
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Icon button */
+button.icon {
+    padding-left: 40px;
+    padding-right: 20px;
+    position: relative;
+}
+
+/* Icon inside the button */
+button.icon:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('icon.png');
+    /* Replace 'icon.png' with your icon image */
+    background-size: cover;
+}
+
+/* Usage example: <button class="button">Click me</button> */
