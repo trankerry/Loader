@@ -15,26 +15,23 @@
         <div id='container'>
             <div id="questions">
                 <div>
-                    <label for="bar">What bar are you using?</label>
-                    <br>
+                    <label for="bar">Bar Weight:</label>
                     <select name="bars" id="bar">
                         <option value="15">15 KG</option>
                         <option value="20">20 KG</option>
                     </select>
                 </div>
-
-                <input type="checkbox" id="red25" name="red25" value="no">
-                <label for='red25'>red?</label>
+                <div>
+                    <input type="checkbox" id="red25" name="red25" value="no">
+                <label for='red25'>Red</label>
 
                 <input type="checkbox" id="convert" name="convert" value="no">
                 <label for='convert'>Convert to lbs</label>
-
+                </div>
             </div>
-            <br>
             <label for="weight">What weight are you lifting?</label>
             <br>
             <input type="number" id="weight" name="weight">
-            <br>
             <button type="button" id="Calculate" value="Calculate"
                 onclick="Calc()">Calculate</button>
             <p id='lbs'></p>

@@ -31,7 +31,7 @@ img {
 
 /* Base styles for the button */
 button {
-    margin-top: 10px;
+    margin: 10px;
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
@@ -67,25 +67,6 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Icon button */
-button.icon {
-    padding-left: 40px;
-    padding-right: 20px;
-    position: relative;
-}
-
-/* Icon inside the button */
-button.icon:before {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-}
-
 input[type=number] {
     font-size: 1rem;
     background-color: transparent;
@@ -109,6 +90,7 @@ select {
 }
 
 #questions {
+    padding: 10px 0;
     display: flex;
     align-items: center;
 }
@@ -117,4 +99,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+p {
+    margin: 0;
 }
