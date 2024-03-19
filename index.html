@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loader</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id='container'>
-        <h1>Loader</h1>
-        <label for="bar">What bar are you using?</label>
-        <br>
-        <select name="bars" id="bar">
-            <option value="15">15 KG</option>
-            <option value="20">20 KG</option>
-        </select>
-        <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loader</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div id='container'>
+            <div id="questions">
+                <div>
+                    <label for="bar">What bar are you using?</label>
+                    <br>
+                    <select name="bars" id="bar">
+                        <option value="15">15 KG</option>
+                        <option value="20">20 KG</option>
+                    </select>
+                </div>
 
-        <label for='red25'>
-            <input type="checkbox" id="red25" name="red25" value="no">Use red 25 KG</input>
-        </label>
-        <br>
-        <label for='convert'>
-            <input type="checkbox" id="convert" name="convert" value="no">Convert to lbs</input>
-        </label>
-        <br>
-        <label for="weight">What weight are you lifting?</label>
-        <br>
-        <input type="number" id="weight" name="weight">
-        <br>
-        <button type="button" id="Calculate" value="Calculate" onclick="Calc()">Calculate</button>
-        <p id='prompt'></p>
-        <ul id="answer"></ul>
-        <p id='lbs'></p>
-    </div>
-    <script src="script.js"></script>
-</body>
+                <input type="checkbox" id="red25" name="red25" value="no">
+                <label for='red25'>red?</label>
+
+                <input type="checkbox" id="convert" name="convert" value="no">
+                <label for='convert'>Convert to lbs</label>
+
+            </div>
+            <br>
+            <label for="weight">What weight are you lifting?</label>
+            <br>
+            <input type="number" id="weight" name="weight">
+            <br>
+            <button type="button" id="Calculate" value="Calculate"
+                onclick="Calc()">Calculate</button>
+            <p id='lbs'></p>
+            <p id='prompt'></p>
+            <ul id="answer"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>

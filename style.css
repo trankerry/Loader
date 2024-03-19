@@ -1,21 +1,37 @@
-
 body {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #6B9080;
+    overflow-x: hidden;
+    position: relative;
 }
+
+html {
+    overflow-x: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
 li {
     display: flex;
     align-items: center;
     font-size: 40px;
-    margin: 10px;
+    margin: 5px 40px 0px 0px;
 }
+
 img {
     padding-left: 10px;
 }
 
 /* Base styles for the button */
 button {
+    margin-top: 10px;
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
@@ -23,7 +39,7 @@ button {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #597066;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -33,7 +49,7 @@ button {
 
 /* Hover effect */
 button:hover {
-    background-color: #45a049;
+    background-color: #91a89e;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,9 +83,38 @@ button.icon:before {
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url('icon.png');
-    /* Replace 'icon.png' with your icon image */
     background-size: cover;
 }
 
-/* Usage example: <button class="button">Click me</button> */
+input[type=number] {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    font-size: .85rem;
+    padding: 0.675em 2em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+#questions {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
