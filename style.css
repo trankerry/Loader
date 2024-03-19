@@ -72,6 +72,7 @@ input[type=number] {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
+    border-radius: none;
     text-align: center;
 }
 
@@ -82,9 +83,9 @@ select {
     /*  other styles for aesthetics */
     font-size: .85rem;
     padding: 0.675em 2em 0.675em 1em;
-    background-color: #fff;
-    border: 1px solid #caced1;
-    border-radius: 0.25rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: none;
     color: #000;
     cursor: pointer;
 }
