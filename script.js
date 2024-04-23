@@ -31,6 +31,7 @@ function Calc() {
 	let weight = document.getElementById('weight').value;
 	let remainder = (weight - bar) / 2;
 	let noRed = document.getElementById('red25');
+	let oneBlue = document.getElementById('blue20');
 	let convert = document.getElementById('convert');
 
 	//if they don't want to use big red 25kg plates
@@ -45,6 +46,12 @@ function Calc() {
 			'You are lifting ' + rounded + ' lbs.';
 	}
 
+	if (oneBlue.checked && !noRed.checked) {
+		remainder = remainder - 20;
+		platesNeeded.push(plates[0].value[1]);
+		plates.shift();
+	}
+	
 	for (let i = 0; i < plates.length; i++) {
 		while (sum + plates[i].value[0] <= remainder) {
 			sum += plates[i].value[0];
