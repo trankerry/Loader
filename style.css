@@ -106,6 +106,10 @@ p {
     margin: 0;
 }
 
+.hidden {
+    display: none;
+  }
+
 #button-container {
     display: flex;
     justify-content: space-between;
@@ -114,7 +118,7 @@ p {
     margin: auto;
 }
 
-.smallPlates{
+#smallPlates{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -122,7 +126,7 @@ p {
     justify-content: center;
 }
 
-.largePlates{
+#largePlates{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -130,12 +134,12 @@ p {
     justify-content: center;
 }
 
-.largePlates button {
+#largePlates button {
     background-color: transparent;
     border: none;
 }
 
-.smallPlates button {
+#smallPlates button {
     background-color: transparent;
     border: none;
 }
@@ -149,3 +153,4 @@ hr {
     height: 1px;
     margin-bottom: 10px;
   }
+

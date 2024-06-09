@@ -42,28 +42,31 @@
             <ul id="answer"></ul>
 
             <hr>
-            <div id="button-container">
-                <div class="largePlates">
-                    <button value="25"><img src="images/25kg.svg" alt="" height='100px'></button>
-                    <button value="20"><img src="images/20kg.svg" alt="" height='100px'></button>
-                    <button value="15"><img src="images/15kg.svg" alt="" height='100px'></button>
-                    <button value="10"><img src="images/10kg.svg" alt="" height='100px'></button>
-                    <button value="5"><img src="images/5kg.svg" alt="" height='100px'></button>
+
+            <button id="toggle-button" class="defaultButton">Toggle</button>
+
+            <div id="button-container" class="hidden">
+                <div id="largePlates" class="hidden">
+                    <button value="25" id="largePlates25" class="hidden"><img src="images/25kg.svg" alt="" height='100px'></button>
+                    <button value="20" id="largePlates20" class="hidden"><img src="images/20kg.svg" alt="" height='100px'></button>
+                    <button value="15" id="largePlates15" class="hidden"><img src="images/15kg.svg" alt="" height='100px'></button>
+                    <button value="10" id="largePlates10" class="hidden"><img src="images/10kg.svg" alt="" height='100px'></button>
+                    <button value="5" id="largePlates5" class="hidden"><img src="images/5kg.svg" alt="" height='100px'></button>
                 </div>
-                <div class="smallPlates">
-                    <button value="2.5"><img src="images/2_5kg.svg" alt="" height='75px'></button>
-                    <button value="2"><img src="images/2kg.svg" alt="" height='75px'></button>
-                    <button value="1.5"><img src="images/1_5kg.svg" alt="" height='75px'></button>
-                    <button value="1"><img src="images/1kg.svg" alt="" height='75px'></button>
-                    <button value=".5"><img src="images/0_5kg.svg" alt="" height='75px'></button>
+                <div id="smallPlates" class="hidden">
+                    <button value="2.5" id="smallPlates2.5" class="hidden"><img src="images/2_5kg.svg" alt="" height='75px'></button>
+                    <button value="2" id="smallPlates2" class="hidden"><img src="images/2kg.svg" alt="" height='75px'></button>
+                    <button value="1.5" id="smallPlates1.5" class="hidden"><img src="images/1_5kg.svg" alt="" height='75px'></button>
+                    <button value="1" id="smallPlates1" class="hidden"><img src="images/1kg.svg" alt="" height='75px'></button>
+                    <button value=".5" id="smallPlates.5" class="hidden"><img src="images/0_5kg.svg" alt="" height='75px'></button>
                 </div>
             </div>
     
             
-            <div id="total-display">
+            <div id="total-display" class="hidden">
                 Total: <span id="total">0</span>
             </div>
-            <button class="defaultButton" id="clear-button">Clear</button>
+            <button class="defaultButton hidden" id="clear-button">Clear</button>
         </div>
        
 

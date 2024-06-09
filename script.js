@@ -140,3 +140,33 @@ function findDups(array) {
 	return result;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-button');
+	const largePlates25 = document.getElementById('largePlates25');
+	const largePlates20 = document.getElementById('largePlates20');
+	const largePlates15 = document.getElementById('largePlates15');
+	const largePlates10 = document.getElementById('largePlates10');
+	const largePlates5 = document.getElementById('largePlates5');
+	const smallPlates2_5 = document.getElementById('smallPlates2.5');
+	const smallPlates2 = document.getElementById('smallPlates2');
+	const smallPlates1_5 = document.getElementById('smallPlates1.5');
+	const smallPlates1 = document.getElementById('smallPlates1');
+	const smallPlates_5 = document.getElementById('smallPlates.5');
+	const totalDisplay = document.getElementById('total-display');
+	const clearButton = document.getElementById('clear-button');
+
+    toggleButton.addEventListener('click', () => {
+		largePlates25.classList.toggle('hidden');
+		largePlates20.classList.toggle('hidden');
+		largePlates15.classList.toggle('hidden');
+		largePlates10.classList.toggle('hidden');
+		largePlates5.classList.toggle('hidden');
+		smallPlates2_5.classList.toggle('hidden');
+		smallPlates2.classList.toggle('hidden');
+		smallPlates1_5.classList.toggle('hidden');
+		smallPlates1.classList.toggle('hidden');
+		smallPlates_5.classList.toggle('hidden');
+		totalDisplay.classList.toggle('hidden');
+		clearButton.classList.toggle('hidden');
+    });
+});
