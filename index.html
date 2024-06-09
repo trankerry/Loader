@@ -43,7 +43,10 @@
 
             <hr>
 
-            <button id="toggle-button" class="defaultButton">Toggle</button>
+            <div class="toggle-switch">
+                <input type="checkbox" id="toggle" class="toggle-checkbox">
+                <label for="toggle" class="toggle-label"></label>
+            </div>
 
             <div id="button-container" class="hidden">
                 <div id="largePlates" class="hidden">
@@ -64,7 +67,7 @@
     
             
             <div id="total-display" class="hidden">
-                Total: <span id="total">0</span>
+                Total: <span id="total">0</span> kg
             </div>
             <button class="defaultButton hidden" id="clear-button">Clear</button>
         </div>

@@ -154,3 +154,45 @@ hr {
     margin-bottom: 10px;
   }
 
+  .toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4cd964;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(25px);
+}

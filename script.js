@@ -1,7 +1,7 @@
 const input = document.getElementById('weight');
 const list = document.getElementById('answer');
-let bar = document.getElementById('bar').value;
 
+//this will calculate the amount of weight on the bar
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('#button-container button');
     const clearButton = document.getElementById('clear-button');
@@ -12,17 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             if (isFirstClick) {
-                total += 15;
+				//get the weight of the bar
+				let barStart = document.getElementById('bar').value;
+                total = total + Number(barStart);
                 isFirstClick = false;
             }
+			//get the weight of the plates and * by 2 so you only need to count one side
             total += parseFloat(button.value)*2;
-            totalDisplay.textContent = total.toFixed(2);
+            totalDisplay.textContent = total;
         });
     });
 
     clearButton.addEventListener('click', () => {
         total = 0;
-        totalDisplay.textContent = total.toFixed(2);
+        totalDisplay.textContent = total;
         isFirstClick = true;
     });
 });
@@ -53,7 +56,7 @@ function Calc() {
 	let sum = 0;
 	const platesNeeded = [];
 	const otherInfo = [];
-	
+	let bar = document.getElementById('bar').value;
 	let weight = document.getElementById('weight').value;
 	let remainder = (weight - bar) / 2;
 	let noRed = document.getElementById('red25');
@@ -140,9 +143,10 @@ function findDups(array) {
 	return result;
 }
 
+//toggle off second weight calculator
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('toggle-button');
-	const largePlates25 = document.getElementById('largePlates25');
+    const toggle = document.getElementById('toggle');
+    const largePlates25 = document.getElementById('largePlates25');
 	const largePlates20 = document.getElementById('largePlates20');
 	const largePlates15 = document.getElementById('largePlates15');
 	const largePlates10 = document.getElementById('largePlates10');
@@ -154,8 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const smallPlates_5 = document.getElementById('smallPlates.5');
 	const totalDisplay = document.getElementById('total-display');
 	const clearButton = document.getElementById('clear-button');
+	const total = document.getElementById('total');
 
-    toggleButton.addEventListener('click', () => {
+    toggle.addEventListener('change', (event) => {
+		total.textContent = 0;
 		largePlates25.classList.toggle('hidden');
 		largePlates20.classList.toggle('hidden');
 		largePlates15.classList.toggle('hidden');
