@@ -1,5 +1,31 @@
 const input = document.getElementById('weight');
 const list = document.getElementById('answer');
+let bar = document.getElementById('bar').value;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('#button-container button');
+    const clearButton = document.getElementById('clear-button');
+    const totalDisplay = document.getElementById('total');
+    let total = 0;
+    let isFirstClick = true;
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (isFirstClick) {
+                total += 15;
+                isFirstClick = false;
+            }
+            total += parseFloat(button.value)*2;
+            totalDisplay.textContent = total.toFixed(2);
+        });
+    });
+
+    clearButton.addEventListener('click', () => {
+        total = 0;
+        totalDisplay.textContent = total.toFixed(2);
+        isFirstClick = true;
+    });
+});
 
 // Add event listener for input change
 input.addEventListener('input', function () {
@@ -27,7 +53,7 @@ function Calc() {
 	let sum = 0;
 	const platesNeeded = [];
 	const otherInfo = [];
-	let bar = document.getElementById('bar').value;
+	
 	let weight = document.getElementById('weight').value;
 	let remainder = (weight - bar) / 2;
 	let noRed = document.getElementById('red25');
@@ -113,3 +139,4 @@ function findDups(array) {
 
 	return result;
 }
+

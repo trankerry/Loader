@@ -30,7 +30,7 @@ img {
 }
 
 /* Base styles for the button */
-button {
+.defaultButton {
     margin: 10px;
     display: inline-block;
     padding: 12px 24px;
@@ -48,20 +48,20 @@ button {
 }
 
 /* Hover effect */
-button:hover {
+.defaultButton:hover {
     background-color: #91a89e;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Active/focus effect */
-button:active,
-button:focus {
+.defaultButton:active,
+.defaultButton:focus {
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Disabled state */
-button:disabled {
+.defaultButton:disabled {
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
@@ -105,3 +105,47 @@ ul {
 p {
     margin: 0;
 }
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.smallPlates{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.largePlates{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.largePlates button {
+    background-color: transparent;
+    border: none;
+}
+
+.smallPlates button {
+    background-color: transparent;
+    border: none;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:white;
+    height: 1px;
+    margin-bottom: 10px;
+  }

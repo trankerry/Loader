@@ -35,12 +35,39 @@
             <label for="weight">What weight are you lifting?</label>
             <br>
             <input type="number" id="weight" name="weight">
-            <button type="button" id="Calculate" value="Calculate"
+            <button class='defaultButton' type="button" id="Calculate" value="Calculate"
                 onclick="Calc()">Calculate</button>
             <p id='lbs'></p>
             <p id='prompt'></p>
             <ul id="answer"></ul>
+
+            <hr>
+            <div id="button-container">
+                <div class="largePlates">
+                    <button value="25"><img src="/images/25kg.svg" alt="" height='100px'></button>
+                    <button value="20"><img src="/images/20kg.svg" alt="" height='100px'></button>
+                    <button value="15"><img src="/images/15kg.svg" alt="" height='100px'></button>
+                    <button value="10"><img src="/images/10kg.svg" alt="" height='100px'></button>
+                    <button value="5"><img src="/images/5kg.svg" alt="" height='100px'></button>
+                </div>
+                <div class="smallPlates">
+                    <button value="2.5"><img src="/images/2_5kg.svg" alt="" height='75px'></button>
+                    <button value="2"><img src="/images/2kg.svg" alt="" height='75px'></button>
+                    <button value="1.5"><img src="/images/1_5kg.svg" alt="" height='75px'></button>
+                    <button value="1"><img src="/images/1kg.svg" alt="" height='75px'></button>
+                    <button value=".5"><img src="/images/0_5kg.svg" alt="" height='75px'></button>
+                </div>
+            </div>
+    
+            
+            <div id="total-display">
+                Total: <span id="total">0</span>
+            </div>
+            <button class="defaultButton" id="clear-button">Clear</button>
         </div>
+       
+
+           
         <script src="script.js"></script>
     </body>
 </html>
