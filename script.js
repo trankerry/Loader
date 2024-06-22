@@ -75,6 +75,13 @@ function Calc() {
 			'You are lifting ' + rounded + ' lbs.';
 	}
 
+	if (convertKG.checked) {
+		let lbsWeight = weight / 2.205;
+		let rounded = lbsWeight.toFixed(2);
+		document.getElementById('lbs').innerHTML =
+			'You are lifting ' + rounded + ' kg.';
+	}
+
 	if (oneBlue.checked && !noRed.checked) {
 		remainder = remainder - 20;
 		platesNeeded.push(plates[0].value[1]);
