@@ -54,7 +54,7 @@ img {
 
 /* Hover effect */
 .defaultButton:hover {
-    background-color: #91a89e;
+    background-color: #ea9ab2;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -180,7 +180,7 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #ea9ab2;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -205,3 +205,8 @@ hr {
 .toggle-checkbox:checked + .toggle-label:before {
     transform: translateX(25px);
 }
+
+/* input[type='checkbox'] {
+    accent-color: #e27396;
+} */
+
