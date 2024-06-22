@@ -6,9 +6,10 @@ body {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #6B9080;
+    background-color: #efcfe3;
     overflow-x: hidden;
     position: relative;
+    color: #4d4d4d;
 }
 
 html {
@@ -43,7 +44,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    background-color: #597066;
+    background-color: #ea9ab2;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -98,6 +99,10 @@ select {
     padding: 10px 0;
     display: flex;
     align-items: center;
+}
+
+#barQuestion{
+    width: 30%;
 }
 
 ul {
@@ -194,7 +199,7 @@ hr {
 }
 
 .toggle-checkbox:checked + .toggle-label {
-    background-color: #4cd964;
+    background-color: #e27396;
 }
 
 .toggle-checkbox:checked + .toggle-label:before {

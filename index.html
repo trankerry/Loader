@@ -14,7 +14,7 @@
     <body>
         <div id='container'>
             <div id="questions">
-                <div>
+                <div id="barQuestion">
                     <label for="bar">Bar Weight:</label>
                     <select name="bars" id="bar">
                         <option value="15">15 KG</option>
@@ -22,17 +22,20 @@
                     </select>
                 </div>
                 <div>
-                    <input type="checkbox" id="blue20" name="blue20" value="no">
-                    <label for='blue20'>One Blue</label>    
-
-                    <input type="checkbox" id="red25" name="red25" value="no">
-                    <label for='red25'>Red</label>
-
-                    <input type="checkbox" id="convert" name="convert" value="no">
-                    <label for='convert'>Convert to lbs</label>
-
-                    <input type="checkbox" id="convertKG" name="convertKG" value="no">
-                    <label for='convertKG'>Convert to kg</label>
+                    <div>
+                        <input type="checkbox" id="blue20" name="blue20" value="no">
+                        <label for='blue20'>One Blue</label>    
+    
+                        <input type="checkbox" id="convert" name="convert" value="no">
+                        <label for='convert'>Convert to lbs</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="red25" name="red25" value="no">
+                        <label for='red25'>Red</label>
+    
+                        <input type="checkbox" id="convertKG" name="convertKG" value="no">
+                        <label for='convertKG'>Convert to kg</label>
+                    </div>
                 </div>
             </div>
             <label for="weight">What weight are you lifting?</label>
@@ -64,7 +67,7 @@
                     <button value="2" id="smallPlates2" class="hidden"><img src="images/2kg.svg" alt="" height='75px'></button>
                     <button value="1.5" id="smallPlates1.5" class="hidden"><img src="images/1_5kg.svg" alt="" height='75px'></button>
                     <button value="1" id="smallPlates1" class="hidden"><img src="images/1kg.svg" alt="" height='75px'></button>
-                    <button value=".5" id="smallPlates.5" class="hidden"><img src="images/0_5kg.svg" alt="" height='75px'></button>
+                    <button value=".5" id="smallPlates.5" class="hidden"><img src="images/0_5kg.svg" alt="" height='50px'></button>
                 </div>
             </div>
     
