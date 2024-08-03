@@ -183,3 +183,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		clearButton.classList.toggle('hidden');
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-item a');
+    const views = document.querySelectorAll('.view');
+
+    function showView(viewId) {
+        views.forEach(view => {
+            if (view.id === viewId) {
+                view.classList.add('active');
+            } else {
+                view.classList.remove('active');
+            }
+        });
+    }
+
+    navItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            const viewId = item.getAttribute('data-view');
+            showView(viewId);
+        });
+    });
+
+    // Show the home view by default
+    showView('home');
+});

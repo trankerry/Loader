@@ -23,6 +23,14 @@ html {
     align-items: center;
 }
 
+#container-home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
 li {
     display: flex;
     align-items: center;
@@ -115,16 +123,16 @@ p {
     margin: 0;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-  }
+  } */
 
 #button-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between;
     margin-bottom: 20px;
     width: 80%;
-    margin: auto;
+    margin: auto; */
 }
 
 #smallPlates{
@@ -153,7 +161,7 @@ p {
     border: none;
 }
 
-hr {
+/* hr {
     border: 0;
     clear:both;
     display:block;
@@ -161,9 +169,9 @@ hr {
     background-color:white;
     height: 1px;
     margin-bottom: 10px;
-  }
+  } */
 
-  .toggle-switch {
+  /* .toggle-switch {
     position: relative;
     width: 50px;
     height: 25px;
@@ -204,9 +212,49 @@ hr {
 
 .toggle-checkbox:checked + .toggle-label:before {
     transform: translateX(25px);
-}
+} */
 
 /* input[type='checkbox'] {
     accent-color: #e27396;
 } */
 
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.nav-item img:hover {
+    transform: scale(1.1);
+}
+
+#views {
+    margin-bottom: 60px; /* To avoid overlap with the navbar */
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
